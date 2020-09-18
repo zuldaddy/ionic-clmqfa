@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Car Depreciation App</h2>
+  <p>
+  This car depreciation calculator is a handy tool that will help you estimate the value of your car once it's been used. You might be surprised, but the value of your car decreases to 91% of the initial market value the moment you purchase it. 
+  </p>
+  <p>
+   The car value continues to drop year after year. After five years, your car's value decreases to 40% of the initial value.
+  </p>
+
+<ion-item>
+  <ion-label> Balance Transfer Amount </ion-label>
+  <ion-input type="number" [(ngModel)]="BTA"> </ion-input>
+</ion-item>
+
+<br>
+
+<ion-item>
+  <ion-label> Payment Terms  6|12|18|24 </ion-label>
+  <ion-input type="number" [(ngModel)]="PT"> </ion-input>
+</ion-item>
+
+<button ion-button color="Primary" (click)="compute()"> Compute </button>
+
+<br>
+
+
+<br>
+<ion-item> 
+  <h3> Total Interest Payable {{TIP}} </h3>
+</ion-item>
+
+<br>
+<ion-item> 
+  <h3> Monthly Payment {{MP}} </h3>
+</ion-item>
+
+<br>
+<ion-item> 
+  <h3> Total Amount  {{TA}} </h3>
+</ion-item>
+
+
+
+</ion-content>
