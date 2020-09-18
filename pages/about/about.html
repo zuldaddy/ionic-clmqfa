@@ -5,16 +5,16 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Car Depreciation App</h2>
+  <h2>CREDIT CARD BALANCE TRANSFER CALCULATOR APP</h2>
   <p>
-  This car depreciation calculator is a handy tool that will help you estimate the value of your car once it's been used. You might be surprised, but the value of your car decreases to 91% of the initial market value the moment you purchase it. 
-  </p>
-  <p>
-   The car value continues to drop year after year. After five years, your car's value decreases to 40% of the initial value.
+With the Katipunero's Kalculator, you can consolidate all your other credit card balances and
+pay in fixed monthly installments for up to 36 months. Simply encode all the required information and find out 
+how much we can help  you! Goodluck fellow Kapwa!
   </p>
 
+
 <ion-item>
-  <ion-label> Balance Transfer Amount </ion-label>
+  <ion-label> Balance Transfer Amount PHP</ion-label>
   <ion-input type="number" [(ngModel)]="BTA"> </ion-input>
 </ion-item>
 
@@ -25,26 +25,26 @@
   <ion-input type="number" [(ngModel)]="PT"> </ion-input>
 </ion-item>
 
+<br>
 <button ion-button color="Primary" (click)="compute()"> Compute </button>
 
 <br>
-
-
 <br>
+<br>
+<br>
+
 <ion-item> 
-  <h3> Total Interest Payable {{TIP}} </h3>
+  <h3> Total Interest Payable PHP {{TIP}} </h3>
 </ion-item>
 
 <br>
 <ion-item> 
-  <h3> Monthly Payment {{MP}} </h3>
+  <h3> Monthly Payment PHP {{MP}} </h3>
 </ion-item>
 
 <br>
 <ion-item> 
-  <h3> Total Amount  {{TA}} </h3>
+  <h3> Total Amount PHP {{TA}} </h3>
 </ion-item>
-
-
 
 </ion-content>
